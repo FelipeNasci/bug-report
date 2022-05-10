@@ -28,7 +28,7 @@ export const FeedbackContentStep = ({
   
   return (
     <>
-      <header>
+      <header className="mb-4">
         <button
           className="top-5 left-5 absolute text-zinc-400 hover:text-zinc-100"
           type="button"
@@ -38,7 +38,7 @@ export const FeedbackContentStep = ({
         </button>
 
         <span className="text-xl leading-6 flex items-center gap-2">
-          <img src={img.source} alt={img.alt} />
+          <img className="w-6 h-6" src={img.source} alt={img.alt} />
           {title}
         </span>
 
