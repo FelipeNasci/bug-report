@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { Widgets } from "..";
+import { Widgets } from "../Widgets";
 
 export default {
   title: "App/Widgets",
