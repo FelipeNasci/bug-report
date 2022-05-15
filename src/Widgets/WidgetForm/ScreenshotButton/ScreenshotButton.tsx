@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Camera, Trash } from "../../icons";
+import { Camera, Trash } from "../../../components/icons";
 import html2canvas from "html2canvas";
-import { Loading } from "../../Loading";
+import { Loading } from "../../../components/Loading";
 
 interface ScreenshotButtonProps {
   screenshot?: string;

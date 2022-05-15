@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { ArrowLeft } from "../../icons";
+import { ArrowLeft } from "../../../components/icons";
 import { feedbackTypes } from "../constants";
-import { CloseButton } from "../../buttons/CloseButton";
+import { CloseButton } from "../../../components/buttons";
 import { ScreenshotButton } from "../ScreenshotButton";
 
 import type { FeedbackType, FormEvent } from "../types";
