@@ -1,4 +1,4 @@
-import { Popover } from "@headlessui/react";
+import { Popover } from "../../../shared/ui-components";
 import { X } from "../../icons";
 
 export const CloseButton = () => (

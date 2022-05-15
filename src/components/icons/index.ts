@@ -1,1 +1,1 @@
-export * from "phosphor-react";
+export * from "../../shared/icons";
