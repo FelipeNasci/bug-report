@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { ArrowLeft } from "phosphor-react";
+import { useState } from "react";
+import { ArrowLeft } from "../../../../icons";
 import { feedbackTypes } from "../constants";
-import { CloseButton } from "../../CloseButton";
+import { CloseButton } from "../../../../buttons/CloseButton";
 import { ScreenshotButton } from "../ScreenshotButton";
 
 import type { FeedbackType, FormEvent } from "../types";
@@ -25,7 +25,7 @@ export const FeedbackContentStep = ({
     event.preventDefault();
     onSendFeedback(true);
   }
-  
+
   return (
     <>
       <header className="mb-4">
