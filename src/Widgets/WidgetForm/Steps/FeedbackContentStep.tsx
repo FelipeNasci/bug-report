@@ -6,24 +6,24 @@ import { ScreenshotButton } from "../ScreenshotButton";
 
 import type { FeedbackType, FormEvent } from "../types";
 interface FeedbackTypeStepProps {
-  feedbackType: FeedbackType;
-  onFeedbackResetRequest: () => void;
-  onSendFeedback: (hasSended: boolean) => void;
+  feedbackType?: FeedbackType;
+  onFeedbackResetRequest?: () => void;
+  onSendFeedback?: (hasSended: boolean) => void;
 }
 
-export const FeedbackContentStep = ({
-  feedbackType,
-  onFeedbackResetRequest,
-  onSendFeedback,
-}: FeedbackTypeStepProps) => {
-  const { title, img } = feedbackTypes[feedbackType];
+// feedbackType,
+// onFeedbackResetRequest,
+// onSendFeedback,
+//{}: FeedbackTypeStepProps
+export const FeedbackContentStep = () => {
+  // const { title, img } = feedbackTypes[feedbackType];
 
   const [screenshot, setScreenshot] = useState<string | undefined>(undefined);
   const [feedback, setFeedback] = useState<string>();
 
   function handleSubmitFeedback(event: FormEvent) {
     event.preventDefault();
-    onSendFeedback(true);
+    // onSendFeedback(true);
   }
 
   return (
@@ -32,14 +32,16 @@ export const FeedbackContentStep = ({
         <button
           className="top-5 left-5 absolute text-zinc-400 hover:text-zinc-100"
           type="button"
-          onClick={onFeedbackResetRequest}
+          onClick={() => {
+            // onFeedbackResetRequest;
+          }}
         >
           <ArrowLeft className="w-4 h-4" weight="bold" />
         </button>
 
         <span className="text-xl leading-6 flex items-center gap-2">
-          <img className="w-6 h-6" src={img.source} alt={img.alt} />
-          {title}
+          <img className="w-6 h-6" src={"img.source"} alt={"img.alt"} />
+          {"title"}
         </span>
 
         <CloseButton />
