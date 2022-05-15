@@ -1,4 +1,4 @@
-import { ChatTeardropDots } from "phosphor-react";
+import { ChatTeardropDots } from "../icons";
 import { Popover } from "@headlessui/react";
 import { WidgetForm } from "./components/WidgetForm";
 

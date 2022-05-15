@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Camera, Trash } from "phosphor-react";
+import { Camera, Trash } from "../../../../icons";
 import html2canvas from "html2canvas";
 import { Loading } from "../../../../Loading";
 

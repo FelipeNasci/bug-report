@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowLeft } from "phosphor-react";
+import { ArrowLeft } from "../../../../icons";
 import { feedbackTypes } from "../constants";
 import { CloseButton } from "../../../../buttons/CloseButton";
 import { ScreenshotButton } from "../ScreenshotButton";
