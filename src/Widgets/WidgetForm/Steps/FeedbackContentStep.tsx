@@ -4,6 +4,7 @@ import { feedbackTypes } from "../constants";
 import { CloseButton } from "../../../components/buttons";
 import { ScreenshotButton } from "../ScreenshotButton";
 
+import { Header } from "./components/header";
 import type { FeedbackType, FormEvent } from "../types";
 interface FeedbackTypeStepProps {
   feedbackType?: FeedbackType;
@@ -28,7 +29,7 @@ export const FeedbackContentStep = () => {
 
   return (
     <>
-      <header className="mb-4">
+      {/* <header>
         <button
           className="top-5 left-5 absolute text-zinc-400 hover:text-zinc-100"
           type="button"
@@ -45,8 +46,8 @@ export const FeedbackContentStep = () => {
         </span>
 
         <CloseButton />
-      </header>
-
+      </header> */}
+      <Header />
       <form className="w-full" onSubmit={handleSubmitFeedback}>
         <textarea
           className="min-w-[304px] w-full text-sm placeholder:text-zinc-400 text-zinc-100 border-zinc-400 bg-transparent rounded-md focus:border-brand-500 focus:ring-1 focus:outline-none focus:ring-brand-500 scrollbar-thumb-slate-700 scrollbar-track-transparent scrollbar-thin"

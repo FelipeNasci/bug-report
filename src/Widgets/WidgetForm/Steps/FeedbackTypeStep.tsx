@@ -1,6 +1,6 @@
 import { feedbackTypes } from "../constants";
 import { CloseButton } from "../../../components/buttons";
-
+import { Header } from "./components";
 import type { FeedbackType } from "../types";
 interface FeedbackTypeStepProps {
   setFeedbackType?: (feedbackType: FeedbackType) => void;
@@ -10,10 +10,7 @@ interface FeedbackTypeStepProps {
 // FeedbackTypeStepProps
 export const FeedbackTypeStep = () => (
   <>
-    <header>
-      <span className="text-xl leading-10">Insert your feedback</span>
-      <CloseButton />
-    </header>
+    <Header hideBackButton>Insert your feedback</Header>
 
     <div className="flex py-0 my-2 gap-2 w-full">
       {Object.entries(feedbackTypes).map(([key, value]) => (

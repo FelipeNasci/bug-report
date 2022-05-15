@@ -1,11 +1,5 @@
 import { useState } from "react";
 
-import {
-  FeedbackTypeStep,
-  FeedbackContentStep,
-  FeedbackSuccessStep,
-} from "./Steps";
-
 import { FeedbackType } from "./types";
 import { StepContextType, StepContext } from "../../contexts";
 import { StepsHelper } from "./Steps";
@@ -13,7 +7,7 @@ import { StepsHelper } from "./Steps";
 export const WidgetForm = () => {
   const [feedbackType, setFeedbackType] = useState<FeedbackType | null>(null);
   const [feedbackSended, setFeedbackSended] = useState(false);
-  const [step, setStep] = useState<StepContextType>("FeedbackContentStep");
+  const [step, setStep] = useState<StepContextType>("FeedbackTypeStep");
 
   function handleFeedbackReset() {
     setFeedbackType(null);
