@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { Widgets } from "./components";
+import { Widgets } from "./base-components";
 
 function App() {
   return <Widgets />;
