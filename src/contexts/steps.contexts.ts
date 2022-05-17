@@ -1,8 +1,4 @@
 import { createContext } from "react";
+import { IStepContext } from "./types";
 
-export type StepContextType =
-  | "FeedbackTypeStep"
-  | "FeedbackContentStep"
-  | "FeedbackSuccessStep";
-
-export const StepContext = createContext({} as StepContextType);
+export const StepContext = createContext({} as IStepContext);

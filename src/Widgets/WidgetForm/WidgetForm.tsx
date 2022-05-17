@@ -1,24 +1,24 @@
-import { useState } from "react";
-
-import { FeedbackType } from "./types";
-import { StepContextType, StepContext } from "../../contexts";
+import { StepContext } from "../../contexts";
+import { useStep, useFeedback, useStepContext } from "../../hooks";
 import { StepsHelper } from "./Steps";
 
 export const WidgetForm = () => {
-  const [feedbackType, setFeedbackType] = useState<FeedbackType | null>(null);
-  const [feedbackSended, setFeedbackSended] = useState(false);
-  const [step, setStep] = useState<StepContextType>("FeedbackTypeStep");
-
-  function handleFeedbackReset() {
-    setFeedbackType(null);
-    setFeedbackSended(false);
-  }
+  const { step, next, back, reset } = useStep();
+  const { feedback, setFeedback } = useFeedback();
 
   return (
-    <StepContext.Provider value={step}>
+    <StepContext.Provider
+      value={{
+        step,
+        next,
+        back,
+        reset,
+        feedback,
+        setFeedback,
+      }}
+    >
       <div className="bg-zinc-900 p-4 relative rounded-2xl mb-2 flex flex-col items-center shadow-lg w-[calc(100vw-2rem)] md:w-auto">
-        <StepsHelper step={step} />
-
+        <StepsHelper />
         <footer className="text-xs text-neutral-400">
           Done with ♥ by{" "}
           <a
