@@ -3,4 +3,4 @@
 
 # Summary
 
-- [Configure Storybook](docs%5Cinstall-storybook.md)
+- [Configure Storybook](docs/install-storybook.md)
