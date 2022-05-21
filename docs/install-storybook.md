@@ -16,7 +16,7 @@ npx storybook init
 
 ### **_Tailwind not work with Storybook_**
 
-![](assets%5Cissue-tailwind-not-work-wit-storybook.gif)
+![](assets/issue-tailwind-not-work-wit-storybook.gif)
 
 ## Configure tailwind with storybook
 
@@ -28,7 +28,7 @@ yarn add @storybook/addon-postcss
 
 2 - Configure postcss in storybook
 
-[`.storybook/main.js`](..%5C.storybook%5Cmain.js)
+[`.storybook/main.js`](../.storybook/main.js)
 
 ```javascript
   //...
@@ -45,9 +45,9 @@ yarn add @storybook/addon-postcss
   ],
 ```
 
-3 - Import [tailwind styles](..%5Csrc%5Cindex.css)
+3 - Import [tailwind styles](../src/index.css)
 
-[`.storybook/preview.js`](..%5C.storybook%5Cpreview.js)
+[`.storybook/preview.js`](../.storybook/preview.js)
 
 ```javascript
 import "../src/index.css";
@@ -57,4 +57,4 @@ export const parameters = {
 };
 ```
 
-![](assets%5Cfix-tailwind-not-work-wit-storybook.gif)
+![](assets/fix-tailwind-not-work-wit-storybook.gif)
