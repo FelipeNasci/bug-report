@@ -2,15 +2,15 @@ import { useState } from "react";
 import { ScreenshotButton } from "../ScreenshotButton";
 
 import { Header } from "./components/header";
-import type { FormEvent } from "../types";
 import { useStepContext } from "../../../hooks";
 import { FeedbackDataType } from "../../../contexts";
+import type { FormEvent } from "../types";
 
 export const FeedbackContentStep = () => {
-  const { feedback, setFeedback, next, back } = useStepContext();
-
-  const [screenshot, setScreenshot] = useState<string | undefined>(undefined);
+  const [screenshot, setScreenshot] = useState<string>();
   const [message, setMessage] = useState<string>();
+
+  const { feedback, setFeedback, next, back } = useStepContext();
 
   function handleSubmitFeedback(event: FormEvent) {
     event.preventDefault();
