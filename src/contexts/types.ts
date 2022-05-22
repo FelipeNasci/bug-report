@@ -1,17 +1,7 @@
-export const feedbackTypes = {
-  BUG: {
-    title: "Bug",
-  },
-  IDEA: {
-    title: "Idea",
-  },
-  OTHER: {
-    title: "Other",
-  },
-};
+export type FeedbackType = "BUG" | "IDEA" | "OTHER";
 
 export type FeedbackDataType = {
-  feedbackType: keyof typeof feedbackTypes;
+  feedbackType: FeedbackType;
   message?: string;
   img?: {
     source?: string;
