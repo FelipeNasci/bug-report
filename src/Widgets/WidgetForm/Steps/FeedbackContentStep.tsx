@@ -25,7 +25,7 @@ export const FeedbackContentStep = () => {
         <span className="text-xl leading-6 flex items-center gap-2">
           <img
             className="w-6 h-6"
-            src={feedback?.img?.source!}
+            src={feedback?.img?.source}
             alt={feedback?.img?.alt}
           />
           {feedback?.feedbackType}
