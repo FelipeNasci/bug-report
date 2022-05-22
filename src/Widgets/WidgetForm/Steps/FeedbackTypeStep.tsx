@@ -1,5 +1,5 @@
 import { feedbackTypes } from "../constants";
-import { Header } from "./components";
+import { Header } from "../../../components/header";
 
 import { useStepContext } from "../../../hooks";
 import { FeedbackDataType } from "../../../contexts";

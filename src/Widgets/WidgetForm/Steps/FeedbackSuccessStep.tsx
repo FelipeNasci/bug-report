@@ -1,6 +1,6 @@
 import Success from "../../../assets/success.svg";
 import { useStepContext } from "../../../hooks";
-import { Header } from "./components";
+import { Header } from "../../../components/header";
 
 export const FeedbackSuccessStep = () => {
   const { reset } = useStepContext();

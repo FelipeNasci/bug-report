@@ -1,5 +1,5 @@
-import { ArrowLeft } from "../../../../../components/icons";
-import { CloseButton } from "../../../../../components/buttons";
+import { ArrowLeft } from "../icons";
+import { CloseButton } from "../buttons";
 
 interface HeaderProps {
   onBackClick?: () => void;
