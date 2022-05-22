@@ -1,10 +1,11 @@
-import { ChatTeardropDots } from "../components/icons";
-import { Popover } from "@headlessui/react";
+import { ChatTeardropDots } from "@/components/icons";
+import { Popover } from "@/shared/ui-components";
 import { WidgetForm } from "./WidgetForm";
 
 type WidgetsProps = {
   children?: React.ReactNode;
 };
+
 export const Widgets = ({ children }: WidgetsProps) => (
   <>
     {children}

@@ -1,11 +1,8 @@
 import { FeedbackTypeStep } from "./FeedbackTypeStep";
 import { FeedbackContentStep } from "./FeedbackContentStep";
 import { FeedbackSuccessStep } from "./FeedbackSuccessStep";
-import { StepsType } from "../../../contexts";
 
-interface StepsHelperProps {
-  step: StepsType;
-}
+import type { StepsHelperProps } from "../types";
 
 export const StepsHelper = ({ step }: StepsHelperProps) => {
   switch (step) {

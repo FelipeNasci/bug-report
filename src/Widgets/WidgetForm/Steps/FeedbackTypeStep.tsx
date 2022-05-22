@@ -1,8 +1,8 @@
-import { feedbackTypes } from "../constants";
-import { Header } from "../../../components/header";
+import { Header } from "@/components/header";
+import { FeedbackDataType } from "@/contexts";
+import { useStepContext } from "@/hooks";
 
-import { useStepContext } from "../../../hooks";
-import { FeedbackDataType } from "../../../contexts";
+import { feedbackTypes } from "../constants";
 
 export const FeedbackTypeStep = () => {
   const { setFeedback, next } = useStepContext();

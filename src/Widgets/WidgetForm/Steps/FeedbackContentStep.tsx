@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { ScreenshotButton } from "../ScreenshotButton";
 
-import { Header } from "../../../components/header";
-import { useStepContext } from "../../../hooks";
-import { FeedbackDataType } from "../../../contexts";
+import { Header } from "@/components/header";
+import { useStepContext } from "@/hooks";
+import { FeedbackDataType } from "@/contexts";
+
 import type { FormEvent } from "../types";
+import { ScreenshotButton } from "../ScreenshotButton";
 
 export const FeedbackContentStep = () => {
   const [screenshot, setScreenshot] = useState<string>();
