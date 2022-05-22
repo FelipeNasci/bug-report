@@ -1,4 +1,6 @@
-import { feedbackTypes } from "./constants";
+import { StepsType } from "@/contexts";
 
 export type { FormEvent } from "react";
-export type FeedbackType = keyof typeof feedbackTypes;
+export interface StepsHelperProps {
+  step: StepsType;
+}

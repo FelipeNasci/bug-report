@@ -1,4 +1,4 @@
-import { CircleNotch } from "../icons";
+import { CircleNotch } from "@/components/icons";
 
 export const Loading = () => (
   <div className="w-6 h-6 flex items-center justify-center overflow-hidden">

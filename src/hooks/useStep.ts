@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { StepsType } from "../contexts";
+import { StepsType } from "@/contexts";
 
 export const useStep = () => {
   const [step, setStep] = useState<StepsType>("FeedbackTypeStep");
