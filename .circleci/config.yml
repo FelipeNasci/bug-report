@@ -32,7 +32,6 @@ jobs:
     docker:
       - image: node:14.20.0
     steps:
-      - checkout
       - run:
           name: "show directory"
           command: ls
