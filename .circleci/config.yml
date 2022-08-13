@@ -18,9 +18,19 @@ jobs:
           name: "Say hello"
           command: "echo Hello, World!"
 
+  install-packages:
+    docker:
+      - image: cimg/node:14.20.0
+    steps:
+      - run:
+          name: "install packages"
+          command: "yarn install"
+
+
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
   say-hello-workflow:
     jobs:
       - say-hello
+      - install-packages
