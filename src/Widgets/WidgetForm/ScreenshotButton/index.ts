@@ -1,1 +1,1 @@
-export * from "./ScreenshotButton";
+export * from './ScreenshotButton'

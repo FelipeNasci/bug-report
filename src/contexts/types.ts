@@ -1,26 +1,26 @@
-export type FeedbackType = "BUG" | "IDEA" | "OTHER";
+export type FeedbackType = 'BUG' | 'IDEA' | 'OTHER'
 
 export type FeedbackDataType = {
-  feedbackType: FeedbackType;
-  message?: string;
+  feedbackType: FeedbackType
+  message?: string
   img?: {
-    source?: string;
-    alt?: string;
-  };
-};
+    source?: string
+    alt?: string
+  }
+}
 
 export type StepsType =
-  | "FeedbackTypeStep"
-  | "FeedbackContentStep"
-  | "FeedbackSuccessStep";
+  | 'FeedbackTypeStep'
+  | 'FeedbackContentStep'
+  | 'FeedbackSuccessStep'
 
 export interface IStepContext {
-  step: StepsType;
-  next: () => void;
-  back: () => void;
-  reset: () => void;
-  feedback?: FeedbackDataType;
+  step: StepsType
+  next: () => void
+  back: () => void
+  reset: () => void
+  feedback?: FeedbackDataType
   setFeedback: React.Dispatch<
     React.SetStateAction<FeedbackDataType | undefined>
-  >;
+  >
 }

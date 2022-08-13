@@ -5,6 +5,7 @@
   "scripts": {
     "clean": "yarn cache clean --all && rm -rf node_modules",
     "start": "yarn && yarn storybook",
+    "format": "prettier --write .",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
