@@ -1,4 +1,4 @@
-import { feedbackTypes } from "./constants";
+import { feedbackTypes } from './constants'
 
-export type { FormEvent } from "react";
-export type FeedbackType = keyof typeof feedbackTypes;
+export type { FormEvent } from 'react'
+export type FeedbackType = keyof typeof feedbackTypes

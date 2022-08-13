@@ -1,9 +1,9 @@
-import "./App.css";
+import './App.css'
 
-import { Widgets } from "./components";
+import { Widgets } from './components'
 
 function App() {
-  return <Widgets />;
+  return <Widgets />
 }
 
-export default App;
+export default App
