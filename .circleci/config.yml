@@ -25,7 +25,10 @@ jobs:
       - checkout
       - run:
           name: "install packages"
-          command: yarn install && node --version && yarn lint
+          command: |
+            yarn install
+            node --version
+            yarn lint
 
 
 # Invoke jobs via workflows'
