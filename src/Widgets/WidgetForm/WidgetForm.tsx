@@ -1,5 +1,5 @@
-import { StepContext } from "../../contexts";
-import { useStep, useFeedback } from "../../hooks";
+import { StepContext } from "@/contexts";
+import { useStep, useFeedback } from "@/hooks";
 import { StepsHelper } from "./Steps";
 
 export const WidgetForm = () => {

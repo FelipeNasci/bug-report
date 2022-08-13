@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FeedbackDataType } from "../contexts";
+import { FeedbackDataType } from "@/contexts";
 
 export const useFeedback = () => {
   const [feedback, setFeedback] = useState<FeedbackDataType>();

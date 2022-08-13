@@ -1,5 +1,5 @@
-import { Popover } from "../../../shared/ui-components";
-import { X } from "../../icons";
+import { Popover } from "@/shared/ui-components";
+import { X } from "@/components/icons";
 
 export const CloseButton = () => (
   <Popover.Button
