@@ -5,13 +5,13 @@ This feature is util for avoid imports in deep layers of application
 Replace this:
 
 ```ts
-import { Loading } from "../../../components/Loading";
+import { Loading } from '../../../components/Loading'
 ```
 
 for this:
 
 ```ts
-import { Loading } from "@/components/Loading";
+import { Loading } from '@/components/Loading'
 ```
 
 ## Summary
@@ -78,18 +78,18 @@ export default defineConfig({
 `.storybook/main.js`
 
 ```ts
-const path = require("path");
+const path = require('path')
 
 module.exports = {
   //...some-options
   webpackFinal: async (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
-      "@": path.resolve(__dirname, "../src"),
-    };
-    return config;
+      '@': path.resolve(__dirname, '../src'),
+    }
+    return config
   },
-};
+}
 ```
 
 ## References
