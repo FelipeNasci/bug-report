@@ -1,1 +1,1 @@
-export * from "./WidgetForm";
+export * from './WidgetForm'

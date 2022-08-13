@@ -50,11 +50,11 @@ yarn add @storybook/addon-postcss
 [`.storybook/preview.js`](../.storybook/preview.js)
 
 ```javascript
-import "../src/index.css";
+import '../src/index.css'
 
 export const parameters = {
-//... configs
-};
+  //... configs
+}
 ```
 
 ![](assets/fix-tailwind-not-work-wit-storybook.gif)

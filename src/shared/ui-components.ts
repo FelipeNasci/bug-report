@@ -1,1 +1,1 @@
-export * from "@headlessui/react";
+export * from '@headlessui/react'

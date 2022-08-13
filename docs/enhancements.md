@@ -50,21 +50,21 @@ export const WidgetForm = () => {
 
 ```tsx
 export const WidgetForm = () => {
-  const { step, next, back, reset } = useStep();
-  const { feedback, setFeedback } = useFeedback();
+  const { step, next, back, reset } = useStep()
+  const { feedback, setFeedback } = useFeedback()
 
   return (
     <StepContext.Provider
       value={{ step, next, back, reset, feedback, setFeedback }}
     >
-      <div className="...some-classes">
+      <div className='...some-classes'>
         <StepsHelper step={step} />
 
         <footer />
       </div>
     </StepContext.Provider>
-  );
-};
+  )
+}
 ```
 
 ---
@@ -79,7 +79,7 @@ Each step-page implements a header. The goal is create a flexible header compone
 
 ```tsx
 <header>
-  <span className="text-xl leading-10">Insert your feedback</span>
+  <span className='text-xl leading-10'>Insert your feedback</span>
   <CloseButton />
 </header>
 ```
@@ -87,17 +87,17 @@ Each step-page implements a header. The goal is create a flexible header compone
 - [FeedbackContentStep.tsx](../src/Widgets/WidgetForm/Steps/FeedbackContentStep.tsx)
 
 ```tsx
-<header className="mb-4">
+<header className='mb-4'>
   <button
-    className="top-5 left-5 absolute text-zinc-400 hover:text-zinc-100"
-    type="button"
+    className='top-5 left-5 absolute text-zinc-400 hover:text-zinc-100'
+    type='button'
     onClick={onFeedbackResetRequest}
   >
-    <ArrowLeft className="w-4 h-4" weight="bold" />
+    <ArrowLeft className='w-4 h-4' weight='bold' />
   </button>
 
-  <span className="text-xl leading-6 flex items-center gap-2">
-    <img className="w-6 h-6" src={img.source} alt={img.alt} />
+  <span className='text-xl leading-6 flex items-center gap-2'>
+    <img className='w-6 h-6' src={img.source} alt={img.alt} />
     {title}
   </span>
 
@@ -125,9 +125,9 @@ Each step-page implements a header. The goal is create a flexible header compone
 
 ```tsx
 <Header onBackClick={back}>
-  <span className="text-xl leading-6 flex items-center gap-2">
+  <span className='text-xl leading-6 flex items-center gap-2'>
     <img
-      className="w-6 h-6"
+      className='w-6 h-6'
       src={feedback?.img?.source}
       alt={feedback?.img?.alt}
     />
@@ -145,18 +145,18 @@ Each step-page implements a header. The goal is create a flexible header compone
 ### [**Header Component**](../src/Widgets/WidgetForm/Steps/components/header/Header.tsx)
 
 ```tsx
-<header className="mb-4">
+<header className='mb-4'>
   {!hideBackButton && (
     <button
-      className="top-5 left-5 absolute text-zinc-400 hover:text-zinc-100"
-      type="button"
+      className='top-5 left-5 absolute text-zinc-400 hover:text-zinc-100'
+      type='button'
       onClick={onBackClick}
     >
-      <ArrowLeft className="w-4 h-4" weight="bold" />
+      <ArrowLeft className='w-4 h-4' weight='bold' />
     </button>
   )}
 
-  <span className="text-xl leading-6 flex items-center gap-2">{children}</span>
+  <span className='text-xl leading-6 flex items-center gap-2'>{children}</span>
 
   {!hideCloseButton && <CloseButton />}
 </header>
