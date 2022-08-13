@@ -20,7 +20,7 @@ jobs:
 
   install-packages:
     docker:
-      - image: node:14-alpine3.15
+      - image: cimg/node:14.20.0
     steps:
       - checkout
       - run:
@@ -30,8 +30,7 @@ jobs:
             node --version
             yarn lint
 
-
-# Invoke jobs via workflows'
+# Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
   say-hello-workflow:
