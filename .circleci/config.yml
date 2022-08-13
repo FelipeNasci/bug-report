@@ -19,12 +19,10 @@ jobs:
           command: "echo Hello, World!"
 
   install-packages:
-    docker:
-      - image: cimg/node:14.20.0
     steps:
       - run:
           name: "install packages"
-          command: "yarn install"
+          command: "yarn install" 
 
 
 # Invoke jobs via workflows
