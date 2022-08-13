@@ -30,8 +30,9 @@ jobs:
             yarn lint
   show-directories:
     docker:
-      - image: node:14.20.0
+      - image: ubuntu
     steps:
+      - checkout
       - run:
           name: "show directory"
           command: ls
