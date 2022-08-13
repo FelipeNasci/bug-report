@@ -28,6 +28,14 @@ jobs:
             yarn install
             node --version
             yarn lint
+  show-directories:
+    docker:
+      - image: node:14.20.0
+    steps:
+      - checkout
+      - run:
+          name: "show directory"
+          command: ls'
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
