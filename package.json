@@ -5,6 +5,8 @@
   "scripts": {
     "clean": "yarn cache clean --all && rm -rf node_modules",
     "start": "yarn && yarn storybook",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
@@ -17,6 +19,7 @@
     "phosphor-react": "^1.4.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "@tailwindcss/forms": "^0.5.1",
     "tailwind-scrollbar": "^1.3.1"
   },
   "devDependencies": {
@@ -28,7 +31,6 @@
     "@storybook/addon-postcss": "^2.0.0",
     "@storybook/react": "^6.4.22",
     "@storybook/testing-library": "^0.0.11",
-    "@tailwindcss/forms": "^0.5.1",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.33.0",
