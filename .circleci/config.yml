@@ -39,6 +39,14 @@ jobs:
           name: "show directory"
           command: |
             ls
+  
+  lint:
+    docker:
+      - image: node:14.20.0
+    steps:
+      - run:
+          name: exec lint
+          command: yarn lint
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
@@ -48,3 +56,6 @@ workflows:
       - say-hello
       - install-packages
       - show-directories
+      - lint:
+          requires:
+            - install-packages
