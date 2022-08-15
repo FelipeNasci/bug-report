@@ -68,10 +68,9 @@ workflows:
             - install-packages
       - say-hello:
           requires:
-            - install-packages
+            - Hold-for-approve
 
 
 
 
 
-            
