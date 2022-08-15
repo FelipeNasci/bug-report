@@ -57,9 +57,21 @@ jobs:
 workflows:
   say-hello-workflow:
     jobs:
-      - say-hello
       - install-packages
       - show-directories
       - lint:
           requires:
             - install-packages
+      - Hold-for-approve:
+          type: approval
+          requires:
+            - install-packages
+      - say-hello:
+          requires:
+            - install-packages
+
+
+
+
+
+            
